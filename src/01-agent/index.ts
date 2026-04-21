@@ -38,8 +38,10 @@ export async function runAgent(userInput: string): Promise<string> {
     stopWhen: stepCountIs(5),
   });
 
-  console.log(result.text)
+  console.log(result.text);
   return result.text;
 }
 
-runAgent('你好，请帮我查询一下今天北京的天气，然后根据天气推荐一个合适的旅游景点。')
+runAgent(
+  "你好，请帮我查询一下今天北京的天气，然后根据天气推荐一个合适的旅游景点。",
+);

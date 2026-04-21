@@ -16,6 +16,8 @@ export async function getWeather(city: string): Promise<string> {
 
     const data = response.data;
 
+    console.log(data)
+
     // 提取数据
     const currentCondition = data.current_condition?.[0];
 
