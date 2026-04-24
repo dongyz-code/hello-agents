@@ -1,6 +1,6 @@
 import { tavily } from "@tavily/core";
 
-import { getTavilyConfig } from "../../config/env.js";
+import { getEnv } from "../../config/env.js";
 
 export async function getAttraction(
   city: string,
@@ -10,7 +10,7 @@ export async function getAttraction(
   let apiKey: string;
 
   try {
-    ({ apiKey } = getTavilyConfig());
+    ({ TAVILY_API_KEY: apiKey } = getEnv());
   } catch {
     return "错误: 未配置 TAVILY_API_KEY 环境变量。";
   }

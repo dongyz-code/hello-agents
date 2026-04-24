@@ -23,12 +23,18 @@ importers:
       axios:
         specifier: ^1.15.0
         version: 1.15.0
+      dotenv:
+        specifier: ^17.4.2
+        version: 17.4.2
       langchain:
         specifier: ^1.3.1
         version: 1.3.1(@langchain/core@1.1.39(@opentelemetry/api@1.9.0)(openai@6.34.0(zod@4.3.6)))(@opentelemetry/api@1.9.0)(openai@6.34.0(zod@4.3.6))
       openai:
         specifier: ^6.34.0
         version: 6.34.0(zod@4.3.6)
+      serpapi:
+        specifier: ^2.2.1
+        version: 2.2.1
       zod:
         specifier: ^4.3.6
         version: 4.3.6
@@ -246,6 +252,10 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
 
+  dotenv@17.4.2:
+    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
+    engines: {node: '>=12'}
+
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
@@ -414,6 +424,9 @@ packages:
   proxy-from-env@2.1.0:
     resolution: {integrity: sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==}
     engines: {node: '>=10'}
+
+  serpapi@2.2.1:
+    resolution: {integrity: sha512-1HXXaIwDmYueFPauAggIkzozMi5P/a4/yRUxB8Z1kad0VQE/7ohf9a6xRQ99aXR252itDChfmJUfBdCA4phCYA==}
 
   typescript@6.0.2:
     resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
@@ -622,6 +635,8 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
+  dotenv@17.4.2: {}
+
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.2
@@ -773,6 +788,8 @@ snapshots:
   p-timeout@7.0.1: {}
 
   proxy-from-env@2.1.0: {}
+
+  serpapi@2.2.1: {}
 
   typescript@6.0.2: {}
 

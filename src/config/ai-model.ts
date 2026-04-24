@@ -4,7 +4,7 @@ import {
 } from "@ai-sdk/openai-compatible";
 import { generateText, type LanguageModel, type ModelMessage } from "ai";
 
-import { getAiConfig } from "./env.js";
+import { getEnv } from "./env.js";
 
 type DoubaoProvider = OpenAICompatibleProvider;
 type ProviderFactory = () => OpenAICompatibleProvider;
@@ -16,7 +16,7 @@ export const DOUBAO_MODEL_ID = "doubao-seed-2-0-pro-260215";
 const providerRegistry = {
   doubao: {
     createProvider: (): DoubaoProvider => {
-      const { apiBase, apiKey } = getAiConfig();
+      const { AI_API_BASE: apiBase, AI_API_KEY: apiKey } = getEnv();
 
       return createOpenAICompatible({
         name: "doubao",
