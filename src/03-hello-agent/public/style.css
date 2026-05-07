@@ -1,0 +1,223 @@
+/* 样式文件 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* 上传区域 */
+.upload-area {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.upload-area input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.upload-area button {
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-area button:hover {
+    background: #5a6fd6;
+}
+
+.status {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 问答区域 */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-history {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.message.user {
+    background: #e3f2fd;
+    text-align: right;
+}
+
+.message.assistant {
+    background: #f5f5f5;
+}
+
+.message-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sources {
+    margin-top: 8px;
+    padding: 8px;
+    background: #fff3e0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.chat-input {
+    display: flex;
+    gap: 12px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.chat-input button {
+    background: #667eea;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 记忆区域 */
+.memory-input {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.memory-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.memory-input button {
+    background: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.memory-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+}
+
+.memory-item {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
+
+.memory-item .type {
+    background: #e0e0e0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.memory-item .content {
+    flex: 1;
+}
+
+.memory-item .time {
+    color: #999;
+}
+
+/* 统计区域 */
+.stats-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.stats-display p {
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    transition: background 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}

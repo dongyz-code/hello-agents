@@ -107,4 +107,4 @@ class ReflectionAgent {
 }
 
 const reflectionAgent = new ReflectionAgent(new HelloAgentsLLM());
-reflectionAgent.run(`任务： 编写一个Python函数，找出1到n之间所有的素数 (prime numbers)。`)
+reflectionAgent.run(`任务： 编写一个TypeScript函数，找出1到n之间所有的素数 (prime numbers)。`)

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能文档问答助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>智能文档问答助手</h1>
+            <p class="subtitle">基于 RAG + MQE + HyDE 的文档问答系统</p>
+        </header>
+
+        <!-- 文档上传区域 -->
+        <section class="upload-section">
+            <h2>文档上传</h2>
+            <div class="upload-area">
+                <input type="file" id="fileInput" accept=".pdf">
+                <button id="uploadBtn">上传文档</button>
+                <span id="uploadStatus" class="status"></span>
+            </div>
+        </section>
+
+        <!-- 问答区域 -->
+        <section class="chat-section">
+            <h2>智能问答</h2>
+            <div class="chat-container">
+                <div id="chatHistory" class="chat-history"></div>
+                <div class="chat-input">
+                    <input type="text" id="questionInput" placeholder="输入你的问题...">
+                    <button id="askBtn">提问</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 记忆区域 -->
+        <section class="memory-section">
+            <h2>学习笔记</h2>
+            <div class="memory-input">
+                <input type="text" id="noteInput" placeholder="添加学习笔记...">
+                <button id="addNoteBtn">添加笔记</button>
+            </div>
+            <div id="memoryList" class="memory-list"></div>
+            <button id="showMemoryBtn">查看所有记忆</button>
+        </section>
+
+        <!-- 统计区域 -->
+        <section class="stats-section">
+            <h2>学习统计</h2>
+            <div id="statsDisplay" class="stats-display">
+                <p>会话时长: --</p>
+                <p>加载文档: 0</p>
+                <p>提问次数: 0</p>
+                <p>学习笔记: 0</p>
+            </div>
+            <button id="refreshStatsBtn">刷新统计</button>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

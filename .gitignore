@@ -6,3 +6,5 @@ build
 .codex
 .claude
 .env
+/uploads
+/data
